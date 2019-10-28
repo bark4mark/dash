@@ -1,13 +1,11 @@
 import React from 'react';
-
-import '@fortawesome/fontawesome-free';
+import MainHeader from './MainHeader';
 
 class Main extends React.Component {
   render () {
     return (
       <main className="main">
-        <p>Test <i className="fas fa-bars"></i></p>
-        
+        <MainHeader/>
       </main>
     )
   }
