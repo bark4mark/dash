@@ -26,7 +26,7 @@ class Home extends React.Component {
           <FontAwesomeIcon onClick={this.toggleClass} icon={faBars} />
         </div>
         <Header />
-        <SideNav active={this.state.active} />
+        <SideNav toggle={this.toggleClass} state={this.state.active}/>
         <Main />
         <Footer />
       </div>
