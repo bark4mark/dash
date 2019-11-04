@@ -16,8 +16,8 @@ class Home extends React.Component {
     this.state = {active:false};
   }
   toggleClass = () => {
-    const currentState = this.state.active;
-    this.setState({ active: !currentState });
+    const toggled = !this.state.active;
+    this.setState({ active: toggled });
   }
   render(){
     return (
@@ -26,7 +26,7 @@ class Home extends React.Component {
           <FontAwesomeIcon onClick={this.toggleClass} icon={faBars} />
         </div>
         <Header />
-        <SideNav toggle={this.toggleClass} state={this.state.active}/>
+        <SideNav toggle={this.toggleClass} active={this.state.active}/>
         <Main />
         <Footer />
       </div>
