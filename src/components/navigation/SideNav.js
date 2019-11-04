@@ -5,7 +5,6 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 class SideNav extends React.Component {
   render () {
-    console.log(this.props.active)
     return (
       <aside className={this.props.active?'sidenav active':'sidenav'}>
         <div className="sidenav__close-icon">
