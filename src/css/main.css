@@ -26,32 +26,30 @@
   z-index: 2;
   background-color: #394263;
   transform: translateX(-245px);
-  transition: all .6s ease-in-out;
 }
 
 .sidenav.active {
   transform: translateX(0);
 }
 
+.sidenav__close-icon {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ddd;
+}
+
 @media only screen and (min-width: 46.875em) {
   .sidenav {
-    position: relative; /* Fixed position on mobile */
+    position: relative;
     transform: translateX(0);
   }
 
   .sidenav__close-icon {
     visibility: hidden;
   }
-}
-
-.sidenav__close-icon {
-  position: absolute;
-  visibility: visible;
-  top: 8px;
-  right: 12px;
-  cursor: pointer;
-  font-size: 20px;
-  color: #ddd;
 }
 
 .sidenav__list {
@@ -141,9 +139,8 @@
 }
 
 @media only screen and (min-width: 46.875em) {
-  /* Show the sidenav */
   .grid-container {
-    grid-template-columns: 240px 1fr; /* Show the side nav for non-mobile screens */
+    grid-template-columns: 240px 1fr;
     grid-template-areas:
       "sidenav header"
       "sidenav main"
@@ -156,7 +153,6 @@
 }
 
 @media only screen and (min-width: 65.625em) {
-  /* Break out main cards into two columns */
   .main-cards {
     column-count: 2;
   }
