@@ -1,0 +1,26 @@
+.header {
+  grid-area: header;
+  background-color: #648ca6;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.menu-icon {
+  position: fixed;
+  display: flex;
+  top: 5px;
+  left: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  padding: 12px;
+  background-color: #DADAE3;
+}
+
+.header__search {
+  margin-left: 42px;
+}
